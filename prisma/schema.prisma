@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+  // output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("MYSQL_DATABASE_URL")
+}
+
+model user {
+  id   Int     @id @default(autoincrement())
+  name String? @db.VarChar(255)
+  age  Int?
+}
+// 新增商品表
+model Product {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name        String
+  description String?
+  price       Decimal
+  sku         String  @unique
+  published   Boolean @default(false)
+}
+
+// poultry 
+model poultry {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name        String
+  description String?
+  price       Decimal
+  sku         String  @unique
+  published   Boolean @default(false)
+}
