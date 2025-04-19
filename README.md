@@ -34,3 +34,9 @@
 
 [玩转 Nest Cli](https://juejin.cn/post/7338265878288515135)https://juejin.cn/post/7338265878288515135
 [nestjs-prisma](https://nestjs-prisma.dev/docs/installation/)https://nestjs-prisma.dev/docs/installation/
+
+# 参考链接
+
+- [Set up Prisma and integrate into NestJS](https://marcjulian.notion.site/1-Set-up-Prisma-and-integrate-into-NestJS-c5ee2b94556b4bddbe6d1772e9117f72)
+- [在NestJS中使用Prisma开发项目](https://juejin.cn/post/7207228091990736954)https://juejin.cn/post/7207228091990736954
+- 后面可能是prisma/client的路径问题，直接使用[nestjs-prisma](https://nestjs-prisma.dev/docs/installation/)https://nestjs-prisma.dev/docs/installation/
